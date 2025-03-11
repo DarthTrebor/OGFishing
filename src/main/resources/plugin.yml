@@ -1,0 +1,23 @@
+name: OGFishing
+version: '3.0.4'
+main: org.OGFishing.Fishing
+author: DarthTrebor
+api-version: '1.21'
+description: Fishing pool with custom rewards
+commands:
+  ogfishing:
+    description: OGFishing commands
+    usage: /<command> [wand|setpool|reload|reward|reset]
+permissions:
+  ogfishing.wand:
+    description: "Grants the player access to the fishing pool wand."
+    default: op
+  ogfishing.setpool:
+    description: "Allows the player to define the fishing pool area."
+    default: op
+  ogfishing.reload:
+    description: "Enables the player to reload the plugin settings."
+    default: op
+  ogfishing.reset:
+    description: "Lets the player reset the current statistics."
+    default: op

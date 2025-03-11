@@ -1,0 +1,84 @@
+event_forcestart_message: "&c[EVENT]: Fishing lake opened!"
+event_forcestop_message: "&c[EVENT]: Fishing lake closed!"
+
+pools:
+  allowFishing: false
+  multiplier: 100
+  SfAna:
+    pos1: -229.00,-23.00,-119.00,world
+    pos2: -234.00,-25.00,-138.00,world
+    rewards:
+      Pike:
+        name: '&ePike'
+        kilograms: '[1..5]'
+        message: '&fYou caught a &ePike'
+        chance: 0.20
+        type: COD
+      Bream:
+        name: '&7Bream'
+        kilograms: '[1..4]'
+        message: '&fYou caught a &7Bream!'
+        chance: 0.20
+        type: COOKED_COD
+      Salmon:
+        name: '&6Salmon'
+        message: '&fYou caught a &6Salmon!'
+        kilograms: '[3..10]'
+        chance: 0.12
+        type: TROPICAL_FISH
+      Carp:
+        name: '&dCarp'
+        message: '&fYou caught a &dCarp!'
+        kilograms: '[4..15]'
+        chance: 0.12
+        type: COOKED_SALMON
+      SpikyFish:
+        name: '&2Spiky Fish'
+        message: '&fYou caught a &2Spiky Fish!'
+        kilograms: '[1..15]'
+        chance: 0.08
+        type: PUFFERFISH
+      Trout:
+        name: '&bTrout'
+        kilograms: '[15..65]'
+        message: '&fYou caught a &bTrout'
+        chance: 0.08 # 80
+        type: COD
+      Catfish:
+        name: '&cCatfish'
+        kilograms: '[15..50]'
+        message: '&fYou caught a &cCatfish'
+        chance: 0.10
+        type: SALMON
+      Sturgeon:
+        name: '&aSturgeon'
+        kilograms: '[30..150]'
+        message: '&fYou caught a &aSturgeon'
+        chance: 0.09
+        type: COOKED_COD
+      Shark:
+        name: '&4Shark'
+        kilograms: '[300..770]'
+        message: '&fYou caught a &4Shark!'
+        chance: 0.01
+        type: PUFFERFISH
+
+settings:
+  # Whether the game speed should be random
+  random_speed: false
+  # Fixed game speed if random_speed is false (in ticks, 20 ticks = 1 second)
+  speed: 1
+  # Minimum game speed if random_speed is true
+  min_speed: 1
+  # Maximum game speed if random_speed is true
+  max_speed: 4
+  # Character used to display the fishing bar
+  bar_texture: "█"
+
+game_display:
+  # How to display the fishing game ('bossbar', 'actionbar', or 'subtitle')
+  type: 'subtitle'
+
+messages:
+  # Message sent when the fish escapes
+  fish_escape: "&cThe fish escaped!"
