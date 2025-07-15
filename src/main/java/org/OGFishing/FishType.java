@@ -5,7 +5,8 @@ import org.bukkit.Material;
 import java.util.HashMap;
 import java.util.Map;
 
-public enum FishType {
+public enum FishType 
+{
     COOKED_COD(Material.COOKED_COD),
     COD(Material.COD),
     SALMON(Material.SALMON),
